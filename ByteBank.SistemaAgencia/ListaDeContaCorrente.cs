@@ -73,15 +73,6 @@ namespace ByteBank.SistemaAgencia
             _itens[_proximaPosicao] = null;
         }
 
-        public void EscreverListaNaTela()
-        {
-            for(int i =0; i < _proximaPosicao; i++)
-            {
-                ContaCorrente conta = _itens[i];
-                Console.WriteLine($"Conta no índice {i}: numero {conta.Agencia} {conta.Numero}");
-            }
-        }
-
         public ContaCorrente GetItemNoIndice(int indice)
         {
             if(indice < 0 || indice >= _proximaPosicao)

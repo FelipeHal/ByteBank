@@ -19,9 +19,9 @@ namespace ByteBank.SistemaAgencia
             }
         }
 
-        public ListaDeObject()
+        public ListaDeObject(int capacidadeInicial = 5)
         {
-            _itens = new object[5];
+            _itens = new object[capacidadeInicial];
             _proximaPosicao = 0;
         }
 
